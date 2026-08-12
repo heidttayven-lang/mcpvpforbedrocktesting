@@ -1,29 +1,25 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Advanced Duels System",
-    "name": "Duels System",
-    "uuid": "11111111-2222-3333-4444-555555555555",
+    "description": "Detects when a player holds a diamond sword named Duels",
+    "name": "Duels Detector",
+    "uuid": "e1a1b0b0-1234-5678-9abc-def123456789",
     "version": [1, 0, 0],
     "min_engine_version": [1, 20, 0]
   },
   "modules": [
     {
-      "description": "Main Script",
+      "description": "Main behavior module",
       "type": "script",
-      "uuid": "66666666-7777-8888-9999-aaaaaaaaaaaa",
-      "version": [1, 0, 0]
+      "uuid": "f2b2c0c0-2345-6789-abcd-ef2345678901",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
     }
   ],
-  "capabilities": ["script_eval"],
   "dependencies": [
     {
       "module_name": "@minecraft/server",
       "version": "1.8.0-beta"
-    },
-    {
-      "module_name": "@minecraft/server-ui",
-      "version": "1.2.0-beta"
     }
   ]
 }
